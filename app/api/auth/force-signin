@@ -1,0 +1,11 @@
+import { cookies } from 'next/headers'
+
+import { signIn } from 'auth'
+
+export async function GET() {
+  await signIn(
+    'keycloak',
+    undefined,
+    identity_provider: 'eas'
+  )
+}
